@@ -8,32 +8,32 @@
     <link rel="stylesheet" href="catalogo.css">
 </head>
 <body>
-    <header class="bg-dark text-white p-3">
+    <header>
         <nav>
-            <h1 class="text-center">Catálogo</h1>
+            <h1>Catálogo</h1>
             <button> Catalogos</button>
             <button> Filmes</button>
             <button> Series</button>
             <button> Lançamentos</button>
-            <input type="text" name="" id="" placeholder="Buscar Título">
-            <button><img src="icons/botao_busca-b.png" alt=""></button>
+            <input type="text" id="filmeDigitado" placeholder="Busque o título em inglês">
+            <button id="buscarFilme"><img src="icons/botao_busca-b.png" alt=""></button>
         </nav>
     </header>
     
     <section>
-     <h1>Filme desejado</h1>
-
-    <div class="container my-4">
+    <div id="informacoes">
+        <h1>Filme desejado</h1>
         <ul>
-            <li id="title"></li>
-            <li id="year"></li>
-            <li id="rated"></li>
+            <li>Título: <span id="titulo"></span></li>
+            <li>Ano: <span id="ano"></span></li>
+            <li>Duração: <span id="duracao"></span></li>
+            <li>Classificação Indicativa: <span id="classificacaoIndicativa"></span></li>
         </ul>
     </div>
     <div id="poster"></div>
-
+ 
     </section>
-    <footer class="bg-dark text-white p-3 text-center">
+    <footer>
         <p>© 2023 CoderFilmes, Inc.</p>
     </footer>
 

@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>catalogo</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="catalogo.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <h1>Catálogo</h1>
-            <button> Catalogos</button>
-            <button> Filmes</button>
-            <button> Series</button>
-            <button> Lançamentos</button>
-            <input type="text" id="filmeDigitado" placeholder="Busque o título em inglês">
-            <button id="buscarFilme"><img src="icons/botao_busca-b.png" alt=""></button>
-        </nav>
-    </header>
-    
-    <section>
-    <div id="informacoes">
-        <h1>Filme desejado</h1>
-        <ul>
-            <li>Título: <span id="titulo"></span></li>
-            <li>Ano: <span id="ano"></span></li>
-            <li>Duração: <span id="duracao"></span></li>
-            <li>Classificação Indicativa: <span id="classificacaoIndicativa"></span></li>
-        </ul>
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>CoderFilmes</title>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <div class="container">
+      <nav class="navbar">
+        <img
+          id="logo"
+          src="./assets/icons/logo-principal.png"
+          alt="Logo Code"
+        />
+        <select id="select-languages" name="Idioma">
+          <option value="pt-br">Português</option>
+          <option value="en">Inglês</option>
+        </select>
+        <a href="./assets/pages/login.html"
+          ><button id="btn-login">Login</button>
+        </a>
+      </nav>
+
+      <!-- Conteúdo Principal -->
+      <main class="story-card">
+        <h1 class="story-card-title">Bem vindo(a).</h1>
+        <h3 class="story-card-subtitle">
+          Aqui você encontra tudo sobre filmes, séries e pessoas. Explore já!
+        </h3>
+        <form class="form-container">
+          <h4 class="form-invitation">
+            Quer conhecer? Informe seu e-mail para criar sua conta. Aproveite o
+            teste grátis por 01 mês.
+          </h4>
+          <div class="form-container-email">
+            <input
+              id="input-email"
+              type="email"
+              placeholder="E-mail"
+              required
+            />
+          </div>
+          <div class="buttons">
+            <a href="./assets/pages/cadastro.html"
+              ><button class="btn" type="button">Cadastre-se</button>
+            </a>
+            <a href="./assets/pages/catalogo.html">
+              <button class="btn" type="button">Testar</button>
+            </a>
+          </div>
+        </form>
+      </main>
     </div>
-    <div id="poster"></div>
- 
-    </section>
+    <!-- Footer-->
     <footer>
-        <p>© 2023 CoderFilmes, Inc.</p>
+      <img src="./assets/icons/logo-principal.png" alt="Logo CoderFilmes" />
+      <p>CoderFilmes &copy; 2023</p>
     </footer>
-
-    <script src="catalogo.js"></script>
-</body>
+  </body>
 </html>

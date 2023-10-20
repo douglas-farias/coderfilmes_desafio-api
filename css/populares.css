@@ -1,0 +1,66 @@
+/* Estilo Geral */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #030f26;
+    color: #f2f2f2;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Estilo Cabeçalho */
+  .container {
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 30px;
+  }
+
+#infos {
+    margin: 20px;
+    color: white;
+}
+
+h1 {
+    font-size: 25px;
+    grid-area: titulo;
+}
+
+h2 {
+    grid-area: sinopse;
+    font-size: 15px;
+    padding: 0 10px 0 10px;
+}
+
+img {
+    grid-area: poster;
+}
+
+button {
+    grid-area: assistir;
+}
+
+ul {
+    margin: 20px;
+    padding: 20px;
+    background-color: #732743;
+    display: grid;
+    grid-template-rows: 35px 288px 30px;
+    grid-template-columns: 185px auto;
+    grid-template-areas:
+    "titulo titulo"
+    "poster sinopse"
+    "assistir sinopse";
+}
